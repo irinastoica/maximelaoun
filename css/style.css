@@ -111,10 +111,34 @@ body.de_light {
 /* ================================================== */
 
 
+/*  Experience	*/
+
+
+/* ================================================== */
+
+h5.athletic{
+	margin-bottom: 6px!important;
+}
+ p.athletic{
+ 	margin-bottom: 0px!important;
+ }
+
+
+/* ================================================== */
+
+
 /*  header	*/
 
 
 /* ================================================== */
+/* ================================================== */
+
+
+/*  header	*/
+
+
+/* ================================================== */
+
 
 header {
 	width: 100%;
@@ -3100,7 +3124,7 @@ span.teaser {
 	height: 4px;
 	background: #ddd;
 	margin-top: 20px;
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 	border-radius:10px;
 }
 .de-progress .progress-bar {
@@ -3162,10 +3186,10 @@ span.teaser {
 .social-icons.s1 i{
 	border:none;
 	margin:5px;
-} 
+}
 .social-icons.s1:hover i{
 	background:none;
-} 
+}
 
 .social-icons.s1 {
   line-height: 0.5;
@@ -3173,7 +3197,7 @@ span.teaser {
 }
 .social-icons.s1 .inner {
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
 .social-icons.s1 .inner:before,
 .social-icons.s1 .inner:after {
@@ -3204,7 +3228,7 @@ span.teaser {
 	font-size:20px;
 	background:rgba(255,255,255,.2);
 	color:#fff;
-} 
+}
 
 .sc-wrap {
   line-height: 0.5;
@@ -3212,7 +3236,7 @@ span.teaser {
 }
 .sc-wrap .social-icons {
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
 .sc-wrap .social-icons:before,
 .sc-wrap .social-icons:after {
@@ -3897,7 +3921,7 @@ a.btn-left, a.btn-right {
 	color:#fff;
 	border:solid 1px rgba(255,255,255,.1);
 }
-.de_testi.opt-2 blockquote p{ 
+.de_testi.opt-2 blockquote p{
 	font-size:16px;
 }
 .de_testi.opt-2 blockquote:before {
@@ -7033,7 +7057,7 @@ a, img {
 
 
 /* ================================================== */
-	
+
 
 @media(min-width:980px) and (max-width: 1199px) {
 	#mainmenu li a:after {
@@ -7045,7 +7069,7 @@ a, img {
 	}
 }
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	design for 768px
 	/* ================================================== */
 
@@ -7488,23 +7512,23 @@ a, img {
 	.schedule-item .sc-info {
 		padding-top: 20px;
 	}
-	
+
 	.de_tab.tab_style_4 .de_nav li {
 		min-width:100px;
 	}
-	
+
 	#mainmenu a span{
 		display:none;
 	}
-	
+
 	.pf_full_width.grid{
 		margin-left:1.5%;
 	}
-	
+
 }
 
-/* -------------------------------------------------- 
-	custom for 320px & 480px 
+/* --------------------------------------------------
+	custom for 320px & 480px
 	/* -------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
@@ -7603,7 +7627,7 @@ a, img {
 		-moz-border-radius: 0;
 		-webkit-border-radius: 0;
 	}
-	
+
 	.pf_full_width.grid{
 		margin-left:.2%;
 	}
@@ -7612,7 +7636,7 @@ a, img {
 	}
 }
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	design for 480px
 	/* -------------------------------------------------- */
 
@@ -7630,7 +7654,7 @@ a, img {
 	}
 }
 
-/* -------------------------------------------------- 
+/* --------------------------------------------------
 	design for 320px
 	/* -------------------------------------------------- */
 
