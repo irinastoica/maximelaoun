@@ -111,19 +111,50 @@ body.de_light {
 /* ================================================== */
 
 
-/*  Experience	*/
+/*  Experience	NEW CSS */
 
 
 /* ================================================== */
-
+.img-responsive{
+		width: 100%;
+    height: auto;
+}
 h5.athletic{
 	margin-bottom: 6px!important;
+}
+h2.experince{
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }
  p.athletic{
  	margin-bottom: 0px!important;
  }
 
+ span.rollover {
+ 	opacity: 1;
+ 	-o-transition-duration: 1s;
+ 	-moz-transition-duration: 1s;
+ 	-webkit-transition: -webkit-transform 1s;
+ 	background:url(images/mag.png) center center no-repeat #000;
+ 	cursor: pointer;
+	height: 337.43px;
+	width: 505.89px;
+ 	position: absolute;
+ 	z-index: 10;
+ 	opacity: 0;
+	transition: transform .2s;
+ }
 
+ span.rollover:hover {
+ 	opacity: .7;
+ 	-o-transition-duration: 1s;
+ 	-moz-transition-duration: 1s;
+ 	-webkit-transition: -webkit-transform 1s;
+ 	-webkit-box-shadow: 0px 0px 4px #000;
+ 	-moz-box-shadow: 0px 0px 4px #000;
+ 	box-shadow: 0px 0px 4px #000;
+	transform: scale(1.5);
+ }
 /* ================================================== */
 
 
@@ -2125,7 +2156,7 @@ h3 {
 	font-weight:bold;
 	font-size: 18px;
 	margin-top: 0;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 .subtitle.s2 {
 	font-size: 20px;
@@ -2638,7 +2669,7 @@ span.teaser {
 }
 .exp-box{
 	border-bottom:solid 1px rgba(255,255,255,.1);
-	margin-bottom:30px;
+	/* margin-bottom:30px; */
 	padding-bottom:10px;
 }
 .exp-box.s1{
@@ -7681,5 +7712,8 @@ a, img {
 		display: block;
 		margin: 0;
 		padding: 0;
+	}
+	header.autoshow{
+		display: none;
 	}
 }
