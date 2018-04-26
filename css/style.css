@@ -84,7 +84,7 @@ html {
 	background: #fff;
 }
 body {
-	font-family: "Nunito", Arial, Helvetica, sans-serif;
+	font-family: 'Lato', sans-serif, Arial, Helvetica;
 	font-size: 15px;
 	font-weight: 400;
 	background: #555;
@@ -92,6 +92,7 @@ body {
 	line-height: 1.9em;
 	padding: 0;
 	display: none;
+
 }
 body.boxed {
 	margin: 30px;
@@ -129,7 +130,10 @@ h2.experince{
  p.athletic{
  	margin-bottom: 0px!important;
  }
-
+div.item{
+	width: 507px;
+	height: 334px;
+}
  span.rollover {
  	opacity: 1;
  	-o-transition-duration: 1s;
@@ -137,23 +141,75 @@ h2.experince{
  	-webkit-transition: -webkit-transform 1s;
  	background:url(images/mag.png) center center no-repeat #000;
  	cursor: pointer;
-	height: 337.43px;
-	width: 505.89px;
  	position: absolute;
  	z-index: 10;
  	opacity: 0;
 	transition: transform .2s;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 100%;
+    height: 100%;
  }
+ img {
+    width: 100%;
+}
+.col-md-4.col-lg-4.col-sm-4{
+	padding:0px;
+}
 
  span.rollover:hover {
- 	opacity: .7;
+ 	opacity: .8;
  	-o-transition-duration: 1s;
  	-moz-transition-duration: 1s;
  	-webkit-transition: -webkit-transform 1s;
  	-webkit-box-shadow: 0px 0px 4px #000;
  	-moz-box-shadow: 0px 0px 4px #000;
  	box-shadow: 0px 0px 4px #000;
-	transform: scale(1.5);
+
+ }
+span.rollover h1{
+		transition: transform .2s;
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		font-size: 18px;
+}
+
+
+.articles{
+	overflow: hidden;
+}
+ .articles img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+	display: block;
+}
+.articles:hover img {
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+	filter: blur(1px);
+}
+
+ div.information{
+	 margin-top: 55px;
+	 letter-spacing: 1.5px;
+ }
+
+ div.information i{
+	 font-size: 29px;
+    color: white;
+ }
+ div.wow{
+	 text-align: justify;
+ }
+
+ div.wow h2{
+	 text-transform: uppercase;
+	 letter-spacing: 1.2px;
  }
 /* ================================================== */
 
@@ -240,9 +296,9 @@ header.autoshow.scrollOn, header.autoshow.scrollOff {
 header.autoshow.scrollOn {
 	top: 0;
 }
-header.autoshow.scrollOff {
+/* header.autoshow.scrollOff {
 	top: -120px;
-}
+} */
 header div#logo {
 	display: inline-block;
 	height: 100%;
@@ -274,7 +330,14 @@ header .logo-2{
 	color:#333;
 }
 header nav {
-	float: right;
+	margin:0 auto;
+}
+
+header nav ul{
+	margin: 0 auto;
+}
+header nav ul li{
+	margin: 0 auto;
 }
 header nav a {
 	-webkit-transition: all 0.3s;
@@ -508,12 +571,11 @@ header.de_header_2.smaller .info {
 
 #mainmenu {
 	font-family: "Nunito";
-	float: right;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
+	text-align: center;
 }
 #mainmenu ul {
-	float: right;
 	margin: 0px 0px;
 	padding: 0px 0px;
 	height: 30px;
@@ -521,10 +583,11 @@ header.de_header_2.smaller .info {
 #mainmenu li {
 	margin: 0px 0px;
 	padding: 0px 0px;
-	float: left;
 	display: inline;
 	list-style: none;
 	position: relative;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }
 #mainmenu a {
 	display: inline-block;
@@ -7713,7 +7776,14 @@ a, img {
 		margin: 0;
 		padding: 0;
 	}
-	header.autoshow{
-		display: none;
+
+	.deco_box{
+		padding: 0px;
+	}
+	.deco_box h1{
+		padding-top: 40px;
+	}
+	.spacer-double{
+		display: hidden;
 	}
 }
