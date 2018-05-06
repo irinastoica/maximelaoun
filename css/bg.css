@@ -12,10 +12,10 @@
 /* background settings for section */
 
 #section-hero-7 {background:url(../images/background/12.jpg) fixed;
-                background-position:right;
-              background-repeat: no-repeat;}
+                background-position:right;}
 #section-services {background:url(../images/background/2.jpg) fixed;}
-#section-contact {background-color:#f4f4f4;}
+#section-experiences {background:url(../images/background/3.jpg) fixed;}
+#section-contact {background:url(../images/background/4.jpg) fixed;}
 #section-services.index-2 {background:url(../images/background/5a.jpg) fixed;}
 #section-experiences.index-2 {background:url(../images/background/5b.jpg) fixed;}
 #section-services.index-4 {background:url(../images/background/6a.jpg) fixed;}
