@@ -56,6 +56,9 @@
 /* ================================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Nunito:300,300i,400,400i,500,500i,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i');
+
 
 /* ================================================== */
 
@@ -109,8 +112,53 @@ body.de_light {
 	overflow: visible;
 }
 
-/* ================================================== */
+/* =================mobile menu css================================= */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* END MOBILE MENU */
 
 /*  Experience	NEW CSS */
 
@@ -120,6 +168,15 @@ body.de_light {
 		width: 100%;
     height: auto;
 }
+a.mail{
+	text-decoration: none;
+	color: white;
+}
+
+.text-white:hover{
+	color:yellow;
+}
+a:Hover
 h5.athletic{
 	margin-bottom: 6px!important;
 }
@@ -281,11 +338,11 @@ header.transparent {
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
 	background: rgba(255, 255, 255, 0.0);
 }
-header.autoshow {
+header:not(.header-mobile).autoshow {
 	top: -120px;
 	height: 70px !important;
 }
-header.autoshow.scrollOn, header.autoshow.scrollOff {
+header:not(.header-mobile).autoshow.scrollOn, header:not(.header-mobile).autoshow.scrollOff {
 	-o-transition: .5s;
 	-ms-transition: .5s;
 	-moz-transition: .5s;
@@ -293,12 +350,12 @@ header.autoshow.scrollOn, header.autoshow.scrollOff {
 	transition: .5s;
 	outline: none;
 }
-header.autoshow.scrollOn {
+header:not(.header-mobile).autoshow.scrollOn {
 	top: 0;
 }
-/* header.autoshow.scrollOff {
+header:not(.header-mobile).autoshow.scrollOff {
 	top: -120px;
-} */
+}
 header div#logo {
 	display: inline-block;
 	height: 100%;
@@ -330,15 +387,9 @@ header .logo-2{
 	color:#333;
 }
 header nav {
-	margin:0 auto;
+		float: right;
 }
 
-header nav ul{
-	margin: 0 auto;
-}
-header nav ul li{
-	margin: 0 auto;
-}
 header nav a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -571,11 +622,12 @@ header.de_header_2.smaller .info {
 
 #mainmenu {
 	font-family: "Nunito";
-	font-size: 12px;
+	float: right;
+	font-size: 14px;
 	font-weight: 500;
-	text-align: center;
 }
 #mainmenu ul {
+	float: right;
 	margin: 0px 0px;
 	padding: 0px 0px;
 	height: 30px;
@@ -583,11 +635,10 @@ header.de_header_2.smaller .info {
 #mainmenu li {
 	margin: 0px 0px;
 	padding: 0px 0px;
+	float: left;
 	display: inline;
 	list-style: none;
 	position: relative;
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
 }
 #mainmenu a {
 	display: inline-block;
@@ -805,6 +856,7 @@ section {
 section.no-bg, #content.no-bg{
 	background:none !important;
 }
+
 .de-navbar-left .container-fluid .container {
 	width: 100%;
 }
@@ -932,9 +984,10 @@ header.smaller.header-dark #mainmenu a {
 	border-bottom: none;
 }
 header.header-mobile {
-	position:absolute;
-	height: 70px;
-	background:#fff;
+	position:fixed !important;
+top:0;
+height: 70px;
+background:#fff;
 }
 header.header-mobile nav{
 	float:none;
@@ -1328,7 +1381,7 @@ header.header-light .logo-2{
 
 
 .de_light #contact_form.s2 input[type=text], .de_light #contact_form.s2 textarea, .de_light #contact_form.s2 input[type=email], .de_light #search {
-	background:#eee;
+	background:white;
 	color:#333;
 	border:none;
 }
@@ -1348,6 +1401,27 @@ header.header-light .logo-2{
 .de_light #contact_form.s3 textarea {
 	height: 90px;
 }
+#text{
+display:none;
+}
+.btn-container{
+  margin: auto;
+  height:44px;
+  width:166.23px;
+
+}
+button#toggle{
+	background-color: #0279e3;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 50px 10px 50px;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 1.2px;
+	width: 200px;
+
+}
+
 
 #contact_form input[placeholder], #contact_form textarea[placeholder] {
 	color: #eee;
@@ -1604,7 +1678,10 @@ a:hover {
 	color: #fff;
 }
 .de_light a {
-	color: #888;
+	color: #363636;
+}
+a.mail{
+	color: white!important;
 }
 .de_light a:hover {
 	color: #555;
@@ -1860,7 +1937,7 @@ a.btn-text-light {
 	left: 20px;
 }
 a.btn-custom, .btn-custom, a.btn-slider, .btn-slider {
-	font-family: "Open Sans";
+	letter-spacing: 1.5px;
 	font-size: 12px;
 	min-width: 120px;
 }
@@ -1870,6 +1947,10 @@ a.btn-custom, .btn-custom {
 	border-radius: 3px;
 	padding: 15px 30px 15px 30px;
 	min-width: 120px;
+}
+h2.wow.fadeInUp.animated{
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
 }
 a.btn-border {
 	border: solid 2px rgba(255, 255, 255, 1);
@@ -2157,7 +2238,7 @@ h1.big, .h1_big {
 	line-height: 65px;
 }
 h1.big.s1{
-	font-family:"Montserrat";
+	font-family:'Lato', sans-serif, Arial, Helvetica;
 	font-size:72px;
 	font-weight:bold;
 }
@@ -3413,7 +3494,6 @@ a.accordion-toggle, a:visited.accordion-toggle {
 	padding: 30px 0 30px 0;
 	border-radius: 120px;
 	color: #222;
-	font-family: "Montserrat";
 	font-size: 16px;
 	-moz-border-radius: 120px;
 	-webkit-border-radius: 120px;
@@ -7258,12 +7338,13 @@ a, img {
 	header.side-header .social-icons-2 {
 		display: none;
 	}
-	header.autoshow {
+	header:not(.header-mobile).autoshow {
 		height: auto;
 		top: 0;
 	}
-	header.autoshow #mainmenu li a {
+	header:not(.header-mobile).autoshow #mainmenu li a {
 		background: none;
+
 	}
 	header.header-mobile-sticky {
 		position: fixed;
@@ -7422,6 +7503,7 @@ a, img {
 		margin: 0;
 		width: 100%;
 		display: block;
+		text-align: center;
 	}
 	header.header-light.header-mobile #mainmenu li, header.header-light.header-mobile #mainmenu li ul li a {
 		border-color: #eee;
@@ -7757,6 +7839,33 @@ a, img {
 		float: left;
 		width: 100%;
 	}
+    div.desktop-menu {
+        display: none !important;
+    }
+div.mobile-menu{
+	display: block !important;
+}
+
+
+div.information{
+	margin-top:0px;
+}
+.col-md-4.text-white {
+    margin: 0px;
+    font-size: 12px;}
+	div.information i{
+		font-size:20px;
+	}
+	 span.rollover{
+		 opacity: 0.8!important;
+	 }
+	 header.autoshow.transparent.scroll-light.clone{
+		 position: fixed;
+	 }
+/* nav.menu{
+	position: fixed;
+    margin-left: 108px;
+} */
 	.text-item {
 		font-size: 32px;
 		line-height: 32px;
